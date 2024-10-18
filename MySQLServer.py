@@ -15,13 +15,13 @@ def main():
         cursor = client.cursor()
 
         # Create database
-        cursor.execute("CREATE TABLE IS NOT EXISTS alx_book_store")
+        cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database 'alx_book_store' created successfully!")
     
         # Terminate connection
         cursor.close()
         client.close()
-        
+
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print("Something is wrong with your user name or password")
