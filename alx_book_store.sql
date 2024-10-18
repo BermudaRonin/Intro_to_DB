@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS Orders(
 )
 
 CREATE TABLE IF NOT EXISTS Order_details(
-    order_detail INT PRIMARY KEY AUTO_INCREMENT,
+    order_Details INT PRIMARY KEY AUTO_INCREMENT,
     order_id INT,
     book_id INT,
     quantity DOUBLE NOT NULL,
