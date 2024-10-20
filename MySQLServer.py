@@ -2,14 +2,14 @@ import mysql.connector
 from mysql.connector import errorcode
 
 
-cursor = mydb.cursor()
-
-
 def main():
     try:
         # Connect to client
         client = mysql.connector.connect(
-            host="localhost", user="root", passwd="root", database="mydatabase"
+            host="localhost", 
+            user="root", 
+            passwd="root", 
+            database="mydatabase"
         )
 
         cursor = client.cursor()
